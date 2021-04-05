@@ -3,11 +3,6 @@
 PKG_DIR=/mnt/data/udm-patches
 BIN_DIR=/usr/sbin
 
-# Per Github Issue #7, it appears doing this on boot without a delay
-# can cause some issues, adding in a one minute sleep delay before this
-# finishes execution
-sleep 60;
-
 # Rename the openvpn binary and install our wrapper
 # The wrapper will be called by UDM to start an openvpn connection
 if [[ ! -e ${BIN_DIR}/openvpn-orig ]]; then
