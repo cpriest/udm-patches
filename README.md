@@ -5,11 +5,7 @@ This repository contains on boot scripts which handle various things, see below 
 ## Installation
 1. First install the excellent UDM [on-boot-script](https://github.com/boostchicken/udm-utilities/tree/master/on-boot-script) package from [boostchicken/udm-utilities](https://github.com/boostchicken/udm-utilities).
 2. Download this repository and adjust its configuration to your needs.
-3. `scp` the directory to your UDM under /mnt/data, such as:
-
-   `scp -r /path/to/yours/* 192.168.1.1:/mnt/data/`
-
-   Change the ip address and source path as appropriate.
+3. Edit the `install.sh` script and change the `ROUTER` to your routers IP address and run `install.sh`
 4. Login to your UDM via ssh and run the on_boot.d scripts to activate them.
 
    They should persist across reboots and firmware updates per the on_boot project.
