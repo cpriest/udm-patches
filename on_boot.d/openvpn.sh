@@ -3,11 +3,11 @@
 PKG_DIR=/mnt/data/udm-patches
 BIN_DIR=/usr/sbin
 
-#Wait till UDM have connectivity before run the wrapper.
-#This fix the issue where some UDMs get unresponsive on reboot.
+# Wait till UDM have connectivity before run the wrapper.
+# This fix the issue where some UDMs get unresponsive on reboot.
 while ! grep -q '1' /var/run/linkcheck/connected > /dev/null
 do
-sleep 5
+	sleep 5
 done
 
 # Rename the openvpn binary and install our wrapper
