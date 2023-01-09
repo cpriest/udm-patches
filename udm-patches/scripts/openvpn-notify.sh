@@ -2,7 +2,7 @@
 
 # Setup/Teardown masqeurade for the tunnel interface
 if [[ "$1" = "up" ]]; then
-	iptables -t nat -A POSTROUTING -o tun${2} -j MASQUERADE
+	iptables -t nat -I POSTROUTING -o tun${2} -j MASQUERADE
 elif [[ "$1" = "down" ]]; then
 	iptables -t nat -D POSTROUTING -o tun${2} -j MASQUERADE
 fi;
