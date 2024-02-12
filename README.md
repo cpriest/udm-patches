@@ -2,6 +2,10 @@
 
 This repository contains on boot scripts which handle various things, see below for more details.
 
+# Archived
+
+This patch is no longer necessary as the UDM Pro now has proper OpenVPN client capabilities built-in.
+
 ## Installation
 1. First install the excellent UDM [on-boot-script](https://github.com/boostchicken/udm-utilities/tree/master/on-boot-script) package from [boostchicken/udm-utilities](https://github.com/boostchicken/udm-utilities).
 2. Download this repository and adjust its configuration to your needs.
